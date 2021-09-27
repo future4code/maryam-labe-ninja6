@@ -6,14 +6,14 @@ import { GlobalStyle } from './globalStyles';
 
 
 export default class App extends React.Component {
-	render () {
-	return (<>
-		<GlobalStyle />	
-		<Header/>
-		<Home/>
-		<Footer/>
-	</>
-	)
-}
+	render() {
+		return (<>
+			<GlobalStyle />
+			<Header />
+			<Home />
+			<Footer />
+		</>
+		)
+	}
 }
 

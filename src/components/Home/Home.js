@@ -10,17 +10,18 @@ background-color: cadetblue;
 `
 
 export default class Home extends React.Component {
-	render () {
-	return (<>
-        <ContainerHome>
-        <h2> Labeninjas </h2>
-        <p> O talento certo no momento certo! </p>
-        <div>
-            <button>Quero ser um ninja</button>
-            <button>Contratar um ninja</button>
-        </div>
-        </ContainerHome>
-	</>
-	)
-}
+    render() {
+        return (<>
+            <ContainerHome>
+                <h2> Labeninjas </h2>
+                <p> O talento certo no momento certo! </p>
+                <div>
+                    <button>Quero ser um ninja</button>
+                    <button>Contratar um ninja</button>
+                </div>
+            </ContainerHome>          
+
+        </>
+        )
+    }
 }
