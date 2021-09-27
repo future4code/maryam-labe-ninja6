@@ -1,14 +1,19 @@
 import React from 'react'
-import { AppContainer } from './components/AppContainer'
-import { GlobalStyle } from './globalStyles'
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import { GlobalStyle } from './globalStyles';
 
 
-function App() {
+export default class App extends React.Component {
+	render () {
 	return (<>
-		<GlobalStyle />
-		<AppContainer />
+		<GlobalStyle />	
+		<Header/>
+		<Home/>
+		<Footer/>
 	</>
 	)
 }
+}
 
-export default App
