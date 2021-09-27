@@ -1,9 +1,13 @@
 import React from 'react'
 import { AppContainer } from './components/AppContainer'
+import { GlobalStyle } from './globalStyles'
+
 
 function App() {
-	return (
-        <AppContainer />
+	return (<>
+		<GlobalStyle />
+		<AppContainer />
+	</>
 	)
 }
 
