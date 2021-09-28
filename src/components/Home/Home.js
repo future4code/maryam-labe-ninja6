@@ -18,7 +18,7 @@ export const Home = () => {
                 <figcaption>
                     <h2>Seja um<span> Ninja</span></h2>
                 </figcaption>
-                <a href="Cart"></a>
+                <a href="/"></a>
             </figure>
 
             <figure className="snip1104">
@@ -26,7 +26,7 @@ export const Home = () => {
                 <figcaption>
                     <h2>Contrate um<span> Ninja</span></h2>
                 </figcaption>
-                <a href="#"></a>
+                <a href="/"></a>
             </figure>
         </AnimatedContainer>
     </ContainerHome>
