@@ -1,5 +1,5 @@
 import styled from "styled-components"
-// import ImgBg from "../../images/kunaiBackground.jpg"
+
 
 export const ContainerHome = styled.div` 
     display: flex;
@@ -12,7 +12,7 @@ export const ContainerHome = styled.div`
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/bbd89271558965.5bc9241b51e89.jpg ");
     /* background-image: url("/src/images/kunaiBackground.jpg");*/
     /* background-image: url("../../images/kunaiBackground.jpg"); */
-    background-image: url()(${ImgBg});
+    
 
     background-position: center;   
     background-size: cover;

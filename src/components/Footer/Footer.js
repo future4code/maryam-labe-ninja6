@@ -6,6 +6,8 @@ export const Footer = () => {
 
 	return (<>
 		<FooterContainer>
+			{/* <h2>teste</h2>
+			<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif" /> */}
 			<FooterSocialNetworks>
 				<h1>Acesse nossas redes sociais:</h1>
 				<div className="redesSociais">
@@ -24,7 +26,7 @@ export const Footer = () => {
 					<a className="email" href="#"><i className="fa fa-envelope"></i> 4confort@confort.com</a>
 				</div>
 			</FooterCustomerServices>
-		</FooterContainer>		
+		</FooterContainer>
 	</>
 	)
 }
