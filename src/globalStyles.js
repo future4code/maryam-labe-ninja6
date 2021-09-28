@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
+
     *{
         margin: 0;
         padding: 0;
@@ -11,9 +13,9 @@ export const GlobalStyle = createGlobalStyle`
         padding-inline-start: 0px;
         margin-block-start: 0em;
         margin-block-end: 0em;
-        font-family: 'Roboto', sans-serif;        
+        font-family: 'Raleway', Arial, sans-serif;        
     }
-
+  
     :root {
         --background: #303030;
         --branco: #FFFFFF;
@@ -22,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
    body{
         background: var(--background); 
         color: var(--branco); 
-        font-size: 2rem; // REM = 1rem = 16px  
+        font-size: 1rem; // REM = 1rem = 16px  
    }
 
    body, input, textarea, button{     
@@ -30,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
    }
 
    h1, h2, h3, h4, h5, h6, strong{
-        font-weight: 600;
+        font-weight: 800;
    }
 
    button{

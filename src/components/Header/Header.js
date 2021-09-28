@@ -1,29 +1,20 @@
 import React from "react"
-import styled from "styled-components"
+import { HeaderContainer, HeaderLogo, HeaderNav } from "./HeaderStyle"
 
-const ContainerHeader = styled.div` 
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: 30vh;
-background-color: crimson;
-button {
-    margin: 10px;
-    padding: 8px;
-}
-`
 
-export default class Header extends React.Component {
-	render () {
-	return (<>
-        <ContainerHeader>
-        <p> Header </p>
-        <div>
-        <button> Home </button>
-        <button> Carrinho </button>
-        </div>
-        </ContainerHeader>
-	</>
-	)
-}
+export const Header = (props) => {
+    return (<>
+        <HeaderContainer>
+            <HeaderLogo>
+            {/* <a href="index.html"> <img src="" alt="ninja" /> </a> */}
+            <h2> LabNinja </h2>
+            </HeaderLogo>
+            <HeaderNav>
+                <button onClick={() => props.changePage("home")}>  Home </button>
+                <button onClick={() => props.changePage("cart")}> <i className="fa fa-shopping-cart"></i> Carrinho </button>
+                <button><a href="#atendimento-ancora"> <i className="fa fa-mobile-phone"></i> Atendimento</a></button>
+            </HeaderNav>
+        </HeaderContainer>
+    </>
+    )
 }
