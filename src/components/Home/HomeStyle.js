@@ -31,7 +31,7 @@ export const TitleContainer = styled.div`
     font-size: 2rem;
   }
 `
-
+// * Fazer uma func para cada class de baixo. Não funcionou pq o styled compnent não reconhece essas className 
 // export const AnimatedContainer = styled.div`
 
 //   display: flex;
