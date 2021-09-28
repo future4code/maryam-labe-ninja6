@@ -5,10 +5,10 @@ export const FooterContainer = styled.div`
     background-color: #212a2f;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     color: #b3babb;
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif");
+    /* background-image: url("/src/assets/foooterNinjaBackground.gif"); */
     height:70vh;    
     background-position: center;
     background-repeat: no-repeat;
