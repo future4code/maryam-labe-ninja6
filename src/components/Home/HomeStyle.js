@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import ImgBg from "../../images/kunaiBackground.jpg"
+// import ImgBg from "../../images/kunaiBackground.jpg"
 
 export const ContainerHome = styled.div` 
     display: flex;
