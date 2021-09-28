@@ -24,58 +24,84 @@ export const FooterSocialNetworks = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;
+    `
+
+export const SocialNetworksContainer = styled.div`
+    align-items: center;
+    display: flex;
+
+`
     
-    a {
-        padding: 10px;
-        color: #dae5e8;
-    }
-
-    .redesSociais {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        font-size: 50px;
-    }
-
-    .facebook:hover {
+export const Facebook = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+    
+    :hover {
         background-position: right center; 
         color: #3b5998;
         text-decoration: none;
     }
+`
 
-    .twitter:hover {
-        background-position: right center; 
-        color:  #00acee;
-        text-decoration: none;
+export const Twitter = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+
+    :hover {
+            background-position: right center; 
+            color:  #00acee;
+            text-decoration: none;
     }
+`
+    
+export const Linkedin = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .linkedin:hover {
+    :hover {
         background-position: right center; 
         color: #0e76a8;
         text-decoration: none;
     }
+`
+export const Instagram = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .instagram:hover {
+    :hover {
         background-position: right center; 
         color: #d6249f;   
         text-decoration: none;
     }
+`
+export const Youtube = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .youTube:hover {
+    :hover {
         background-position: right center; 
         color:  #c4302b;
         text-decoration: none;
     }
-`
+`    
 
 export const FooterCustomerServices = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    
-    .atendimento {
-        display: flex;
-        align-items: center;
-    }
+    align-content: center;  
+`
+export const Atendimento = styled.div`
+    display: flex;
+    align-items: center;
 `
