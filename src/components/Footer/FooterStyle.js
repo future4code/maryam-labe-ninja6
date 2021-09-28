@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import bgFooter from "../../images/foooterNinjaBackground.gif"
 
 export const FooterContainer = styled.div` 
     font-size: 1rem;
@@ -10,11 +9,14 @@ export const FooterContainer = styled.div`
     color: #b3babb;
     /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif"); */
     /* background-image: url("../../images/foooterNinjaBackground.gif"); */
-    background-image: url()(${bgFooter});
+    
+    background-image: url(${require(`../../images/foooterNinjaBackground.gif`)});
     height:70vh;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
 `
 
 export const FooterSocialNetworks = styled.div`
