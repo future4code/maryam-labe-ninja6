@@ -12,7 +12,7 @@ export const Header = (props) => {
             <HeaderNav>
                 <button onClick={() => props.changePage("home")}>  Home </button>
                 <button onClick={() => props.changePage("cart")}> <i className="fa fa-shopping-cart"></i> Carrinho </button>
-                <button><a href="#atendimento-ancora"> <i className="fa fa-mobile-phone"></i> Atendimento</a></button>
+                {/* <button><a href="#atendimento-ancora"> <i className="fa fa-mobile-phone"></i> Atendimento</a></button> */}
             </HeaderNav>
         </HeaderContainer>
     </>
