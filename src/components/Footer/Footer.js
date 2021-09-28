@@ -21,7 +21,7 @@ export const Footer = () => {
 			<FooterCustomerServices>
 				<h2> Atendimento:</h2>
 				<p>Segunda a sexta, das 9h às 18h.</p>
-				<div id="atendimento-ancora" classNameName="atendimento">
+				<div id="atendimento-ancora" className="atendimento">
 					<a className="telefone" href="/"><i className="fa fa-phone"></i> +55 11 9999 88888</a>
 					<a className="email" href="/"><i className="fa fa-envelope"></i> 4confort@confort.com</a>
 				</div>
