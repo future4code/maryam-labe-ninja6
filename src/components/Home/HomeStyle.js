@@ -1,17 +1,15 @@
 import styled from "styled-components"
 
 export const ContainerHome = styled.div` 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-  padding: 8px;
-  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/bbd89271558965.5bc9241b51e89.jpg ");
-  /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/3609e971558965.5bc9241b50ac9.jpg");    */
-    /* height:30vh;     */
-    background-position: center;
-    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    padding: 8px;
+    height: 70vh;
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/bbd89271558965.5bc9241b51e89.jpg ");
+    /* background-image: url("/src/assets/kunaiBackground.jpg");       */
+    background-position: center;   
     background-size: cover;
 
 `
