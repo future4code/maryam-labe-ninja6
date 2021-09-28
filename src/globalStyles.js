@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
-
+  
     *{
         margin: 0;
         padding: 0;
