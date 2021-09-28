@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
     background-color: #212a2f;
     font-size: 2rem;  
     background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/0d715e71558965.5bc9241b555d5.gif");  
-    /* background-image: url("/src/assets/headerNinjaBackground.gif"); */
+    /* background-image: url("/src/images/headerNinjaBackground.gif"); */
     height:20vh;    
     background-position: center;
     background-repeat: no-repeat;
