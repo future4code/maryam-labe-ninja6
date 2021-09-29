@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const CompaniesContainer = styled.div`
-    background-color: yellow;
+    background-color: #f8d613;
     height: 40vh;
     width: 100vw;
-    color: blue;
+    color: #0448b7;
     padding: 8px;
 `

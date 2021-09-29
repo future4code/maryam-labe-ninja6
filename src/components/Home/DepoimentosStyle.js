@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const DepoimentosContainer = styled.div`
-    background-color: blue;
+    background-color: #0145b4;
     height: 80vh;
     width: 100vw;
-    /* color: blue; */
+    color: #f3cb11;
     padding: 8px;
 `

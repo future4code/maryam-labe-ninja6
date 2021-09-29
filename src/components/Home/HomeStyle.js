@@ -43,7 +43,7 @@ export const Snip1104Red = styled.figure`
     max-width: 410px;
     max-height: 420px;
     width: 100%;    
-    background: #581a14; //* muda o fundo no lado esquerdo na imagem
+    background: #0145b4; //* muda o fundo no lado esquerdo na imagem
     color: #ffffff;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -74,7 +74,7 @@ export const Snip1104Red = styled.figure`
     left: 40px;
     right: 40px;
     display: inline-block;    
-    background: #36100c; //* muda o fundo de onde está escrito
+    background:#111835; //* muda o fundo de onde está escrito
     -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
     transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
     padding: 12px 5px;
@@ -136,7 +136,7 @@ export const Snip1104 = styled.figure`
     max-width: 410px;
     max-height: 420px;
     width: 100%;
-    background: #000000;
+    background:  #f8d613; //* muda o fundo no lado esquerdo na imagem
     color: #ffffff;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
@@ -167,7 +167,7 @@ export const Snip1104 = styled.figure`
     left: 40px;
     right: 40px;
     display: inline-block;
-    background: #000000;
+    background:  #f3cb11; //* muda o fundo de onde está escrito
     -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
     transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
     padding: 12px 5px;
