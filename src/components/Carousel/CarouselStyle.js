@@ -1,13 +1,6 @@
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 
-const forwardIMageAnimation = keyframes`
-    0%{
-        right: -50%;
-    }
-    100%{
-        right: 0%;
-    }
-`
+
 
 // *Para a nimação do Carrossel, por isso foi colocado position absolute e relative em alguns.
 export const CarouselStyledContainer = styled.div`
@@ -25,19 +18,6 @@ export const CarouselContainer = styled.div`
     justify-content: center;
     align-items: center;   
     position: relative;  
-`
-
-export const StyledImageContainer = styled.div`
-    width: 60%;
-    height: 80%;
-    position: absolute;
-    right: 2;
-    animation: ${forwardIMageAnimation} 2s ease;
-`
-
-export const StyledImage = styled.img`
-    width: 100%;
-    height: 100%;
 `
 
 export const StyledArrowContainer = styled.div`
