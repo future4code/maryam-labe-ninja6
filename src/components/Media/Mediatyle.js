@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const CompaniesContainer = styled.div`
+export const MediaContainer = styled.div`
     background-color: #f8d613;
     height: 40vh;
     width: 100vw;
