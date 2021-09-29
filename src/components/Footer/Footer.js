@@ -28,9 +28,11 @@ export const Footer = () => {
 				</SocialNetworksContainer>
 			</FooterSocialNetworks>
 
+			<div></div>
+
 			<FooterCustomerServices>
-				<h2> Atendimento:</h2>
-				<p>Segunda a sexta, das 9h às 18h.</p>
+				<h1> Atendimento:</h1>
+				<h2>Segunda a sexta, das 9h às 18h.</h2>
 				<Atendimento id="atendimento-ancora" >
 					<a href="/"><i className="fa fa-phone"></i> +55 11 9999 88888</a>
 					<a href="/"><i className="fa fa-envelope"></i> 4confort@confort.com</a>

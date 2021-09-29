@@ -3,15 +3,13 @@ import styled from "styled-components"
 export const FooterContainer = styled.div` 
     font-size: 1rem;
     background-color: #212a2f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    color: #b3babb;
-    /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif"); */
-    /* background-image: url("../../images/foooterNinjaBackground.gif"); */
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;        
+    color: #b3babb;    
     background-image: url(${require(`../../images/foooterNinjaBackground.gif`)});
-    height:70vh;    
+    height:60vh;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
