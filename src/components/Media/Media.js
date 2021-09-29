@@ -4,9 +4,8 @@ import { MediaContainer } from "./Mediatyle";
 export const Media = () => {
     return (
         <>
-        <MediaContainer>
-                <h2>Midias</h2>
-                <p>midias sociais, jornais onde aparecemos</p>
+            <MediaContainer>
+               <h1>Nos nas midias</h1>
             </MediaContainer>
         </>
     )

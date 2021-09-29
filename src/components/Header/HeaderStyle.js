@@ -3,15 +3,11 @@ import bgHeader from "../../images/headerNinjaBackground.gif"
 
 export const HeaderContainer = styled.div` 
     display: flex;
-    align-items: center;
+    align-items: center;    
     justify-content: space-between;
-    height: 20vh;
-    background-color: #212a2f;
-    font-size: 2rem;  
-    /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/0d715e71558965.5bc9241b555d5.gif");   */
-    /* background-image: url("/src/images/headerNinjaBackground.gif"); */
-    background-image: url(${bgHeader});
-    height:20vh;    
+    height: 20vh;    
+    font-size: 2rem;     
+    background-image: url(${bgHeader});      
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,5 +32,7 @@ export const HeaderNav = styled.nav`
         font-size: 1rem;
         margin: 10px;
         padding: 8px;
+        background-color: #f8d613;
+        border-radius: 10px;
     }
 `
