@@ -4,7 +4,7 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Home } from './components/Home/Home';
 import Cart from './components/Cart/Cart';
-import Servicos from './components/Servicos/servico';
+import Servicos, { ServicosLoja } from './components/Servicos/Servico';
 
 export default class App extends React.Component {
 	state = {
@@ -27,11 +27,14 @@ export default class App extends React.Component {
 
 		return (<>
 			<GlobalStyle />
+			
 
 			<Header
 				changePage={this.changePage} />
 			{renderCurrentPage()}
-			<Servicos />
+
+			<ServicosLoja />
+
 
 			<Footer />
 		</>
