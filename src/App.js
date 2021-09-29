@@ -4,6 +4,7 @@ import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Home } from './components/Home/Home';
 import Cart from './components/Cart/Cart';
+import Servicos from './components/Servicos/servico';
 
 export default class App extends React.Component {
 	state = {
@@ -30,6 +31,7 @@ export default class App extends React.Component {
 			<Header
 				changePage={this.changePage} />
 			{renderCurrentPage()}
+			<Servicos />
 
 			<Footer />
 		</>
