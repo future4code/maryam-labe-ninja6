@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 
-export const DepoimentosContainer = styled.div`
+export const TestimonialContainer = styled.div`
     background-color: #0145b4;
     height: 80vh;
     width: 100vw;

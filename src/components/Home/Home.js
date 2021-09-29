@@ -3,9 +3,9 @@ import { Snip1104, Snip1104Red, TitleContainer } from "./HomeStyle"
 import { AnimatedContainer, ContainerHome } from "./HomeStyle"
 import hairBlueBg from "../../images/comCabeloBlue.jpg"
 import hairYelowBg from "../../images/comCabeloYelow.jpg"
-import { CarouselContainer } from "./CarouselStyle"
-import { DepoimentosContainer } from "./DepoimentosStyle"
-import { CompaniesContainer } from "./CompaniesStyle"
+import { Carousel } from "../Carousel/Carousel"
+import { Testimonial } from "../Testimonial/Testimonial"
+import { MediaContainer } from "../Media/Mediatyle"
 
 export const Home = () => {
     return (
@@ -34,20 +34,12 @@ export const Home = () => {
                 </AnimatedContainer>
             </ContainerHome>
 
-            <CarouselContainer>
-                <h2>carrosel, como fazer?</h2>
-                <p>Posts recentes</p>
-            </CarouselContainer>
-
-            <DepoimentosContainer>
-                <h2>Depoimentos</h2>
-                <p>O que as pessoas que já usaram nosso serviço tem a dizer?</p>
-            </DepoimentosContainer>
-
-            <CompaniesContainer>
-                <h2>Empresas</h2>
-                <p>Empresas filiadas</p>
-            </CompaniesContainer>
+            <Carousel />
+           
+            <Testimonial />
+                
+            <MediaContainer />
+               
 
 
         </>
