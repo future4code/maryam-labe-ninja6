@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+
 
 import first from "../../images/faceNinjaBlueAndYelow.jpg";
 import second from "../../images/newIcone2blueANDyelow.jpg";
@@ -16,19 +16,23 @@ import {
     StyledArrowContainer
 } from "./CarouselStyle";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
+import { AppImage } from "../AppIMage/AppImage";
 
 const images = [first, second, thirt, forth, fifth, sixth, seventh];
 
 
 export const Carousel = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [direction, setDirection] = useState("forward");
 
     const nextImage = () => {
         setCurrentImageIndex(prevIndex => prevIndex + 1);
+        setDirection("forward");
     }
 
     const prevImage = () => {
         setCurrentImageIndex(prevIndex => prevIndex - 1);
+        setDirection("backward");
     }
 
     return (<>
@@ -41,9 +45,7 @@ export const Carousel = () => {
                     </StyledArrowContainer>
                 )}
 
-                <StyledImageContainer>
-                    <StyledImage src={images[currentImageIndex]} />
-                </StyledImageContainer>
+               <AppImage src={images[currentImageIndex]} imageDir={direction} />
 
                 {currentImageIndex !== images.length - 1 && (
                     <StyledArrowContainer onClick={nextImage} leftPosition="90%">
