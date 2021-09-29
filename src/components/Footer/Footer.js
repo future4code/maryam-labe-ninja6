@@ -10,7 +10,9 @@ import {
 	Linkedin,
 	Instagram,
 	Youtube,
-	SocialNetworksContainer
+	SocialNetworksContainer,
+	Phone,
+	Envelope
 } from "./FooterStyle";
 
 export const Footer = () => {
@@ -34,8 +36,8 @@ export const Footer = () => {
 				<h1> Atendimento:</h1>
 				<h2>Segunda a sexta, das 9h às 18h.</h2>
 				<Atendimento id="atendimento-ancora" >
-					<a href="/"><i className="fa fa-phone"></i> +55 11 9999 88888</a>
-					<a href="/"><i className="fa fa-envelope"></i> 4confort@confort.com</a>
+					<Phone href="/"><i className="fa fa-phone"></i> +55 11 9999 88888</Phone>
+					<Envelope href="/"><i className="fa fa-envelope"></i> 4confort@confort.com</Envelope>
 				</Atendimento>
 			</FooterCustomerServices>
 		</FooterContainer>
