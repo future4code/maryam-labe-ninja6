@@ -1,6 +1,5 @@
 import React from "react"
 import axios from "axios"
-import styled from "styled-components"
 import {
     StyleComplet,
     ListStyle,
@@ -67,8 +66,8 @@ export class ServicosLoja extends React.Component {
     }
     render() {
 
-        const todosOsServicos = this.state.servicosPrestados.
-        filter(jobs => {
+        const todosOsServicos = this.state.servicosPrestados
+        .filter(jobs => {
             return jobs.title.toLowerCase().includes(this.state.query.toLocaleLowerCase())
         })
         .filter(jobs => {
