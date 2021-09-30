@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import React from "react";
 
-
 export const StyleComplet = styled.div`
  display: flex;
  margin: 10px;

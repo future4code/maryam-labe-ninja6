@@ -28,7 +28,6 @@ export class ServicosLoja extends React.Component {
 
     imprimiServicos = () => {
 
-        
 
         axios.get(url, headers)
         .then((res) => {
