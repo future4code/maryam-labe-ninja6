@@ -79,9 +79,7 @@ export default class App extends React.Component {
 						</ContainerHome>
 						<Testimonial />
 						<Media />
-						<Carousel />
-						
-						
+						<Carousel />	
 					</>
 				);
 			case "beNinja":
