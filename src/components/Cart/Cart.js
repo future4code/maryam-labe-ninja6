@@ -3,6 +3,7 @@ import Carrinho from "./Carrinho"
 import { CartContainer } from "./CartStyle";
 import { TitleContainer } from "../Home/HomeStyle";
 import { GiBroadsword } from "react-icons/gi"
+import JobDetails from "../../JobDetails/JobDetails";
 
 
 
@@ -24,7 +25,7 @@ export default class Cart extends React.Component {
 				quantidade: 2
 			}
 		],
-		totalPrice: 0
+		totalPrice: 300
 	}
 
 	/* 	addItenToCart = (iten) => {
@@ -43,10 +44,14 @@ export default class Cart extends React.Component {
 					}
 				}
 				)}
+			addTotalPrice(cost) => {
+				this.setState ({
+					totalPrice: this.state.totalPrice + cost
+				})
+			}
 		} */
 
-	removeItenFromCart = (itenToRemove) => {
-		/* if(itenToRemove.quantidade === 1){ */
+	removeItenFromCart = (itenToRemove) => {		
 		const newCart = this.state.cart.filter(iten => {
 			if (iten.id !== itenToRemove.id) {
 				return iten
@@ -54,10 +59,18 @@ export default class Cart extends React.Component {
 		})
 		this.setState({
 			cart: newCart
-		})
-		/* } */
-
+		})	
+		this.removeTotalPrice(itenToRemove.price)	/* } */
 	}
+		removeTotalPrice = (cost) => {
+			this.setState ({
+				totalPrice: this.state.totalPrice - cost
+			})
+		}
+		
+
+	
+
 
 	render() {
 		return (<>
@@ -70,7 +83,7 @@ export default class Cart extends React.Component {
 				/>
 				<button className="finalizar">Finalizar compra <GiBroadsword /></button>
 			</CartContainer>
-		</>
+					</>
 		)
 	}
 }
