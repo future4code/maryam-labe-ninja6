@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const MediaContainer = styled.div`
-    background-color: #f8d613;
+    background-color: #111835;
     height: 30vh;    
-    color: #0448b7;
+    color: #f3cb11;
     padding: 8px;
 
     display: flex;
