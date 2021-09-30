@@ -19,24 +19,25 @@ const backwardIMageAnimation = keyframes`
 `
 
 export const StyledImageContainer = styled.div`
-    width: 60%;
-    height: 80%;
-    position: absolute;
-    
-    
+    width: 100%;
+    height: 100%;
+    position: absolute;       
     ${props => props.imageDir === "forward" ?
         css`
         animation: ${forwardIMageAnimation} 1s ease;
-        right: 0;
-        
+        right: 0;        
         `:css`
         animation: ${backwardIMageAnimation} 1s ease;
-        lefth: 0;
+        lefth: 50%;
         `    
-    }
+    }     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
+// * tamanho da imagem
 export const StyledImage = styled.img`
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;    
 `
