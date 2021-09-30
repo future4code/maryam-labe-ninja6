@@ -12,9 +12,7 @@ export const FooterContainer = styled.div`
     height:60vh;    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background-size: cover;    
 `
 
 export const FooterSocialNetworks = styled.div`
@@ -22,7 +20,7 @@ export const FooterSocialNetworks = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;    
-    `
+`
 
 export const SocialNetworksContainer = styled.div`
     align-items: center;

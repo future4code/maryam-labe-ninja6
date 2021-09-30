@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import bgHeader from "../../images/headerNinjaBackground.gif"
 import bgHome from "../../images/kunaiBackground.jpg"
 
 export const TitleStyle = styled.div`

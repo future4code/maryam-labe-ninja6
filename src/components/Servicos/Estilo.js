@@ -80,4 +80,6 @@ export const StyloTeste = styled.div`
 `;
 export const Preco = styled.p`
 color: yellow;
+
 `;
+
