@@ -1,34 +1,49 @@
 import React from "react"
-import { TitleContainer } from "./HomeStyle"
+import { Snip1104Blue, Snip1104Yelow } from "./HomeStyle"
 import { AnimatedContainer, ContainerHome } from "./HomeStyle"
-
-
+import hairBlueBg from "../../images/comCabeloBlue.jpg"
+import hairYelowBg from "../../images/comCabeloYelow.jpg"
+import { Carousel } from "../Carousel/Carousel"
+import { Testimonial } from "../Testimonial/Testimonial"
+import { Media } from "../Media/Media"
+import { Title } from "../Title/Title"
 
 export const Home = () => {
-    
-        return (<ContainerHome>
-            <TitleContainer>
-                <h2> Labeninjas </h2>
-                <p> O talento certo no momento certo! </p>
-            </TitleContainer>
+    return (
+        <>
+            <Title />
+            
+            <ContainerHome>               
+                <AnimatedContainer>
+                    <Snip1104Blue>
+                        <img src={hairBlueBg} alt="ninja face" />
+                        <figcaption>
+                            <h2>Seja um<span> Ninja</span></h2>
+                        </figcaption>
+                        <a href="index.html"></a>
+                    </Snip1104Blue>
 
-            <AnimatedContainer>
-                <figure class="snip1104 red">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample33.jpg" alt="sample33" />
-                    <figcaption>
-                        <h2>Seja um<span> Ninja</span></h2>
-                    </figcaption>
-                    <a href="Cart"></a>
-                </figure>
+                    <Snip1104Yelow>
+                        <img src={hairYelowBg} alt="ninja face" />
+                        <figcaption>
+                            <h2>Contrate um<span> Ninja</span></h2>
+                        </figcaption>
+                        <a href="index.html"></a>
+                    </Snip1104Yelow>
+                </AnimatedContainer>
+            </ContainerHome>
 
-                <figure class="snip1104">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" alt="sample35" />
-                    <figcaption>
-                        <h2>Contrate um<span> Ninja</span></h2>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </AnimatedContainer>
-        </ContainerHome>
-        )
-    }
+            
+               <Carousel /> 
+            
+            
+           
+            <Testimonial />
+                
+            <Media />
+               
+
+
+        </>
+    )
+}

@@ -1,8 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
-
+  
     *{
         margin: 0;
         padding: 0;
@@ -19,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #303030;
         --branco: #FFFFFF;
+        --bgYelow: #f8d613;
+        --letterYelow: #f3cb11;
+        --bgBlue: #0145b4;
+        --letterBlue: #0448b7;
+        --bgDarkBlue:#111835;
+        --letterDarkBlue: #151b33;
     }
       
    body{

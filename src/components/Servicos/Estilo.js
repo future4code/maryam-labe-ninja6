@@ -76,4 +76,5 @@ export const StyloTeste = styled.div`
     font-size: 16px;
     margin-bottom: 20px;
   }
+
 `;
