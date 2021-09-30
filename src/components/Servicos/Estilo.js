@@ -34,6 +34,8 @@ export const Button = styled.button`
     margin: 10px;
     cursor: pointer;
     padding: 5px;
+    background-color: yellow;
+    border-radius: 10px;
 `;
 
 export const EstiloFiltro = styled.div`
@@ -67,7 +69,7 @@ export const StyloTeste = styled.div`
 
   h4,
   p {
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
   }
 

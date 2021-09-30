@@ -54,7 +54,6 @@ export class ServicosLoja extends React.Component {
     imprimiServicos = () => {
 
         
-
         axios.get(url, headers)
         .then((res) => {
             this.setState({servicosPrestados: res.data.jobs})
@@ -89,9 +88,7 @@ export class ServicosLoja extends React.Component {
                 return this.state.ordem * (currentJobs.price - nextJobs.price)
         })
         .map((jobs) => {
-
-           
-
+  
             return (
                 <div>
                 <StyleComplet>
