@@ -11,10 +11,17 @@ export const CartContainer = styled.div`
     background-image: url("/src/images/swordBackground.jpg");   */
     background-position: center;   
     background-size: cover;
-
+    .finalizar {
+        margin: 5px;    
+        font-size: 1rem;
+        margin: 10px;
+        padding: 5px;
+        background-color: #f8d613;
+        border-radius: 10px;
+    }
     .finalizar:hover {
         color:  #c4302b;
-        padding: 2px;
+        padding: 8px;
     }
 
 
@@ -27,7 +34,24 @@ export const ItensContainer = styled.div`
 
         button {
         margin: 5px;    
+        font-size: 1rem;
+        margin: 10px;
+        padding: 2px;
+        background-color: #f8d613;
+        border-radius: 10px;
     }
     `
+
+export const Title = styled.div` 
+    display: flex;
+    justify-content: center;
+    h2 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+`
 
 

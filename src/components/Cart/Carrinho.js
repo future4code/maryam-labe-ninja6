@@ -7,12 +7,12 @@ export default class Carrinho extends React.Component {
     render() {
         const cartItens = /* this.props.carrinho && */ this.props.cart.map(iten => {
             return <Itens
-                key ={iten.id}                
+                key={iten.id}
                 title={iten.title}
                 price={iten.price}
-                quantidade= {iten.quantidade}
+                quantidade={iten.quantidade}
                 onClick={() => this.props.removeItenFromCart(iten)}
-                />
+            />
         })
         return (
             <>

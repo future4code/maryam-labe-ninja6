@@ -7,9 +7,9 @@ export default class Itens extends React.Component {
     render() {
         return (
             <><ItensContainer>
-                <p> Quantidade: 
-                {this.props.quantidade}
-                x</p>
+                <p> Quantidade:
+                    {this.props.quantidade}
+                    x</p>
             </ItensContainer>
                 <ItensContainer>
                     <p> Produto: </p>

@@ -1,7 +1,6 @@
 import React from "react";
 import Carrinho from "./Carrinho"
-import { CartContainer } from "./CartStyle";
-import { TitleContainer } from "../Home/HomeStyle";
+import { CartContainer, Title } from "./CartStyle";
 import { GiBroadsword } from "react-icons/gi"
 import JobDetails from "../../JobDetails/JobDetails";
 
@@ -51,7 +50,7 @@ export default class Cart extends React.Component {
 			}
 		} */
 
-	removeItenFromCart = (itenToRemove) => {		
+	removeItenFromCart = (itenToRemove) => {
 		const newCart = this.state.cart.filter(iten => {
 			if (iten.id !== itenToRemove.id) {
 				return iten
@@ -59,22 +58,18 @@ export default class Cart extends React.Component {
 		})
 		this.setState({
 			cart: newCart
-		})	
+		})
 		this.removeTotalPrice(itenToRemove.price)	/* } */
 	}
-		removeTotalPrice = (cost) => {
-			this.setState ({
-				totalPrice: this.state.totalPrice - cost
-			})
-		}
-		
-
-	
-
+	removeTotalPrice = (cost) => {
+		this.setState({
+			totalPrice: this.state.totalPrice - cost
+		})
+	}
 
 	render() {
 		return (<>
-			<TitleContainer> <h2> Carrinho</h2> </TitleContainer>
+			<Title><h2> Carrinho</h2></Title>
 			<CartContainer>
 				<Carrinho
 					cart={this.state.cart}
@@ -83,8 +78,8 @@ export default class Cart extends React.Component {
 				/>
 				<button className="finalizar">Finalizar compra <GiBroadsword /></button>
 			</CartContainer>
-			<JobDetails/>
-					</>
+			
+		</>
 		)
 	}
 }
