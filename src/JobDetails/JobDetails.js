@@ -3,9 +3,9 @@ import axios from "axios";
 
 const headers = {
     headers: {
-      Authorization: "{{demo-key}}"
+        Authorization: "{{demo-key}}" 
     }
-  };
+};
 
 
 export default class JobDetails extends React.Component {

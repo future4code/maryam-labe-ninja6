@@ -83,6 +83,7 @@ export default class Cart extends React.Component {
 				/>
 				<button className="finalizar">Finalizar compra <GiBroadsword /></button>
 			</CartContainer>
+			<JobDetails/>
 					</>
 		)
 	}
