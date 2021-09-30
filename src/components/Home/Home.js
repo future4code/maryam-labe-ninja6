@@ -1,47 +1,52 @@
 import React from "react"
-import { Snip1104, Snip1104Red, TitleContainer } from "./HomeStyle"
-import { AnimatedContainer, ContainerHome } from "./HomeStyle"
-import hairBlueBg from "../../images/comCabeloBlue.jpg"
-import hairYelowBg from "../../images/comCabeloYelow.jpg"
+import { ContainerHome } from "./HomeStyle"
 import { Carousel } from "../Carousel/Carousel"
 import { Testimonial } from "../Testimonial/Testimonial"
-import { MediaContainer } from "../Media/Mediatyle"
+import { Media } from "../Media/Media"
+import { Title } from "../Title/Title"
+import { ChooseNinja } from "../ChooseNinja/ChooseNinja"
+import Cart from "../Cart/Cart"
 
-export const Home = () => {
-    return (
-        <>
+
+export default class Home extends React.Component {
+    state = {
+        currentPage: ''
+    }
+
+    changePage = (currentPage) => {
+        this.setState({ currentPage: currentPage })
+    }
+
+    render() {
+        const renderCurrentPage = () => {
+            switch (this.state.currentPage) {
+                case 'home':
+                    return ""
+                case 'cart':
+                    return <Cart />
+                default:
+                    return ""
+            }
+        }
+
+        return (
             <ContainerHome>
-                <TitleContainer>
-                    <h2> Labeninjas </h2>
-                    <p> O talento certo no momento certo! </p>
-                </TitleContainer>
-                <AnimatedContainer>
-                    <Snip1104Red>
-                        <img src={hairBlueBg} alt="ninja face" />
-                        <figcaption>
-                            <h2>Seja um<span> Ninja</span></h2>
-                        </figcaption>
-                        <a href="index.html"></a>
-                    </Snip1104Red>
 
-                    <Snip1104>
-                        <img src={hairYelowBg} alt="ninja face" />
-                        <figcaption>
-                            <h2>Contrate um<span> Ninja</span></h2>
-                        </figcaption>
-                        <a href="index.html"></a>
-                    </Snip1104>
-                </AnimatedContainer>
+                <Title />
+
+                <ChooseNinja
+                    changePage={this.changePage} />
+                {renderCurrentPage()}
+
+                <Carousel />
+
+                <Testimonial />
+
+                <Media />
+
             </ContainerHome>
-
-            <Carousel />
-           
-            <Testimonial />
-                
-            <MediaContainer />
-               
-
-
-        </>
-    )
+        )
+    }
 }
+
+

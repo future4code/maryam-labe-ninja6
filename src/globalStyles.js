@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
         --branco: #FFFFFF;
         --bgYelow: #f8d613;
         --letterYelow: #f3cb11;
-        --bgtBlue: #0145b4;
+        --bgBlue: #0145b4;
         --letterBlue: #0448b7;
         --bgDarkBlue:#111835;
         --letterDarkBlue: #151b33;
