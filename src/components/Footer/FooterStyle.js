@@ -2,16 +2,14 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.div` 
     font-size: 1rem;
-    background-color: #212a2f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    color: #b3babb;
-    /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif"); */
-    /* background-image: url("../../images/foooterNinjaBackground.gif"); */
-    
+    background-color: #111835;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;        
+    color: #f3cb11;   
     background-image: url(${require(`../../images/foooterNinjaBackground.gif`)});
-    height:70vh;    
+    height:60vh;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,59 +21,109 @@ export const FooterSocialNetworks = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    align-content: center;    
+    `
+
+export const SocialNetworksContainer = styled.div`
+    align-items: center;
+    display: flex;
+    padding: 16px;
+`
     
-    a {
-        padding: 10px;
-        color: #dae5e8;
-    }
-
-    .redesSociais {
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        font-size: 50px;
-    }
-
-    .facebook:hover {
+export const Facebook = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+    
+    :hover {
         background-position: right center; 
         color: #3b5998;
         text-decoration: none;
     }
+`
 
-    .twitter:hover {
-        background-position: right center; 
-        color:  #00acee;
-        text-decoration: none;
+export const Twitter = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+
+    :hover {
+            background-position: right center; 
+            color:  #00acee;
+            text-decoration: none;
     }
+`
+    
+export const Linkedin = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .linkedin:hover {
+    :hover {
         background-position: right center; 
         color: #0e76a8;
         text-decoration: none;
     }
+`
+export const Instagram = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .instagram:hover {
+    :hover {
         background-position: right center; 
         color: #d6249f;   
         text-decoration: none;
     }
+`
+export const Youtube = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
 
-    .youTube:hover {
+    :hover {
         background-position: right center; 
         color:  #c4302b;
         text-decoration: none;
     }
-`
+`    
 
 export const FooterCustomerServices = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    align-content: center;  
     
-    .atendimento {
-        display: flex;
-        align-items: center;
+    h1 {
+        padding: 16px;
+    }
+
+    h2 {
+        color: #dae5e8;
     }
 `
+export const Atendimento = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 16px;  
+`
+export const Phone = styled.a`     
+    color: #dae5e8;
+    padding: 8px;
+    font-size: 2rem;    
+`   
+
+export const Envelope = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+`
+   
+ 
