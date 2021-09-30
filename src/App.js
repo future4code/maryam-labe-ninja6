@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header';
 import { Home } from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 
+
 export default class App extends React.Component {
 	state = {
 		currentPage: "home"
