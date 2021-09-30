@@ -9,7 +9,9 @@ import { ServicosLoja } from './components/Servicos/Servicos';
 export default class App extends React.Component {
 	state = {
 		currentPage: "home"
+
 	}
+
 
 	changePage = (currentPage) => {
 		this.setState({ currentPage: currentPage })

@@ -20,13 +20,11 @@ export const ListStyle = styled.div`
     grid-template-columns: 1fr;
   }
 
-  
- 
-
     h2,
   p {
     font-size: 14px;
     margin: 0;
+
   }
   h2 {
     font-size: 16px;
@@ -36,6 +34,8 @@ export const ListStyle = styled.div`
 
 export const Button = styled.button`
     margin: 10px;
+    cursor: pointer;
+    padding: 5px;
 `;
 
 export const EstiloFiltro = styled.div`
@@ -44,7 +44,7 @@ export const EstiloFiltro = styled.div`
   justify-content: center;
   padding: 40px 20px 0;
   gap: 20px;
-
+  
   input {
     border-radius: 8px;
     padding: 10px;
@@ -54,6 +54,7 @@ export const EstiloFiltro = styled.div`
     border-radius: 8px;
     text-align: center;
     padding: 10px;
+    margin: 10px;
 
   }
 
@@ -63,7 +64,7 @@ export const StyloTeste = styled.div`
     background-color: #3f3b3b;
   border-radius: 10px;
   margin: 0 auto;
-  color: #fff;
+  color: white;
   padding: 30px 20px 20px;
 
   h4,
@@ -76,4 +77,7 @@ export const StyloTeste = styled.div`
     font-size: 16px;
     margin-bottom: 20px;
   }
+`;
+export const Preco = styled.p`
+color: yellow;
 `;
