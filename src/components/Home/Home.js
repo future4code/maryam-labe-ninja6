@@ -25,7 +25,7 @@ export default class Home extends React.Component {
                 case 'cart':
                     return <Cart />
                 default:
-                    return ""
+                    return <h2>Error</h2>
             }
         }
 
