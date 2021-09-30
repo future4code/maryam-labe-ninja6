@@ -10,7 +10,7 @@ export const Media = () => {
     return (
         <MediaContainer>
             <TituloMedia>
-            <h2>Ninjas na mídia</h2>
+                <h2>Ninjas na mídia</h2>
             </TituloMedia>
             <ImagensMediaContainer>
                 <img src={estadao} alt="estadao" />

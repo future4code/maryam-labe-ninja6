@@ -5,8 +5,6 @@ import { Header } from './components/Header/Header';
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 
-
-
 export default class App extends React.Component {
 	state = {
 		currentPage: "home"
@@ -17,7 +15,6 @@ export default class App extends React.Component {
 	}
 
 	render() {
-		
 		const renderCurrentPage = () => {
 			if (this.state.currentPage === "home") {
 				return <Home />
@@ -32,9 +29,8 @@ export default class App extends React.Component {
 			<Header
 				changePage={this.changePage} />
 			{renderCurrentPage()}
-			
 
-			<Footer />			
+			<Footer />
 		</>
 		)
 	}

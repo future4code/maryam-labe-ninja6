@@ -18,13 +18,14 @@ export default class Home extends React.Component {
     }
 
     render() {
-
         const renderCurrentPage = () => {
             switch (this.state.currentPage) {
                 case 'home':
                     return ""
                 case 'cart':
                     return <Cart />
+                default:
+                    return ""
             }
         }
 
@@ -48,21 +49,4 @@ export default class Home extends React.Component {
     }
 }
 
-// export const Home = () => {
-//     return (
-//         <ContainerHome>
-
-//             <Title />
-
-//             <ChooseNinja />
-
-//             <Carousel />
-
-//             <Testimonial />
-
-//             <Media />
-
-//         </ContainerHome>
-//     )
-// }
 

@@ -1,5 +1,6 @@
 import styled, { keyframes, css } from "styled-components";
 
+//* Velocidade de transição
 const forwardArrowAnimation = keyframes`
     0%{
         right: 50%;
@@ -17,7 +18,7 @@ const backwardArrowAnimation = keyframes`
     }
 `
 
-// *Para a nimação do Carrossel foi preciso colocar position absolute e relative em alguns.
+//* Para a nimação do Carrossel foi preciso colocar position absolute e relative em alguns.
 export const CarouselStyledContainer = styled.div`
     /* position: relative; */
     overflow: hidden; // * pra não correr a barra de rolagem em baixo
@@ -59,7 +60,7 @@ export const StyledArrowContainer = styled.div`
     }
 `
 
-// * indicação de qual imagem está, na barra de baixo, os traços.
+//* indicação de qual imagem está, na barra de baixo, os traços.
 export const StyledIndicatorContainer = styled.div`
     width: 200px;
     margin: 0 auto;

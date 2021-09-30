@@ -24,7 +24,6 @@ export const AnimatedContainer = styled.div`
   button{
     margin: 16px;
   }
-
 `
 
 export const Snip1104Blue = styled.figure`

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const MediaContainer = styled.div`
     background-color: #111835;
     height: 30vh;      
