@@ -7,7 +7,7 @@ export const Header = (props) => {
     return (<>
         <HeaderContainer>
             <HeaderLogo>
-                <a href="index.html"> <img src={logo} alt="logo" /> </a>
+                <a href="/"> <img src={logo} alt="logo" /> </a>
                 <h1> LabNinja </h1>
             </HeaderLogo>
             <HeaderNav>

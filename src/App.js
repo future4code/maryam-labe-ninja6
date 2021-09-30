@@ -2,8 +2,9 @@ import React from 'react';
 import { GlobalStyle } from './globalStyles';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
-import { Home } from './components/Home/Home';
+import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
+
 
 
 export default class App extends React.Component {
@@ -31,6 +32,7 @@ export default class App extends React.Component {
 			<Header
 				changePage={this.changePage} />
 			{renderCurrentPage()}
+			
 
 			<Footer />			
 		</>
