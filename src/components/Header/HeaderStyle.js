@@ -5,12 +5,13 @@ export const HeaderContainer = styled.div`
     display: flex;
     align-items: center;    
     justify-content: space-between;
-    height: 20vh;    
-    font-size: 2rem;     
+    height: 12vh;    
+    font-size: 1rem;     
     background-image: url(${bgHeader});      
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0px 16px 0
 `
 
 export const HeaderLogo = styled.div`
@@ -18,12 +19,23 @@ export const HeaderLogo = styled.div`
     justify-content: center;
     align-items: center;
 
+    button {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;        
+    }
+
     img {        
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         object-fit: cover;
         border-radius: 50%;
-        padding: 8px;
+        padding: 1px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;        
     }
 `
 

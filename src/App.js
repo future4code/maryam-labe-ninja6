@@ -1,112 +1,122 @@
 import React from 'react';
 import { GlobalStyle } from './globalStyles';
 import { Footer } from './components/Footer/Footer';
-import { Header } from './components/Header/Header';
-import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import { ServicosLoja } from './components/Servicos/Servicos';
-
-
-// export default class App extends React.Component {
-// 	state = {
-// 		section: "start",
-// 	};
-
-// 	handleClickStart = () => {
-// 		this.setState({ section: "start"});
-// 	}
-
-// 	handleClickBenija = () => {
-// 		this.setState({ section: "beNinja"});
-// 	}
-
-// 	handleClickHireNinja = () => {
-// 		this.setState({ section: "hireNinja" });
-// 	  };
-
-// 	  renderSection = () => {
-// 		switch (this.state.section) {
-// 		  case "start":
-// 			  return <Home />
-// 			// return (
-// 			//   <ContainerStart>
-// 			// 	<img
-// 			// 	  alt="Ninja Logo"
-// 			// 	  src="./sourceImages/labeninjasLogoGrande.png"
-// 			// 	/>
-// 			// 	<button onClick={this.handleClickBeNinja}>
-// 			// 	  QUERO SER UM NINJA
-// 			// 	</button>
-// 			// 	<button onClick={this.handleClickHireNinja}>
-// 			// 	  CONTRATAR UM NINJA
-// 			// 	</button>
-// 			//   </ContainerStart>
-// 			// );
-// 		  case "beNinja":
-// 			return <Cart />;
-// 		  case "hireNinja":
-// 			return <Cart />;
-	
-// 		  default:
-// 			return <h2>Oops! Algo deu errado!</h2>;
-// 		}
-// 	  };
-
-// 	  render() {
-// 		return (
-// 		  <ContainerApp>
-// 			<Header>
-// 			  <button onClick={this.handleClickStart}>
-// 				<img 
-// 				src="./sourceImages/labeninjasLogoPeq.png" 
-// 				alt="logo Labeninjas Pequeno"/>
-// 				<h2>LabeNinjas</h2>
-// 			  </button>
-// 			</Header>
-// 			{this.renderSection()}
-// 		  </ContainerApp>
-// 		);
-// 	  }
-// 	}
-
-
-
-
+import {
+	FaHome,
+	FaShoppingCart,
+	FaPhoneAlt,
+	FaLaptopCode
+} from "react-icons/fa";
+import logo from "../src/images/iconeLogoPage.jpg"
+import {
+	HeaderContainer,
+	HeaderLogo, HeaderNav
+} from "../src/components/Header/HeaderStyle"
+import hairBlueBg from "../src/images/comCabeloBlue.jpg"
+import hairYelowBg from "../src/images/comCabeloYelow.jpg"
+import {
+	AnimatedContainer,
+	ContainerHome,
+	Snip1104Blue,
+	Snip1104Yelow
+} from "../src/components/ChooseNinja/ChooseNinjaStyle";
+import { Carousel } from './components/Carousel/Carousel';
+import { Testimonial } from './components/Testimonial/Testimonial';
+import { Media } from './components/Media/Media';
+import { AppContainer } from './AppContainer';
+import { Title } from './components/Title/Title';
 
 
 export default class App extends React.Component {
 	state = {
-		currentPage: "home"
+		section: "start",
+	};
 
+	handleClickStart = () => {
+		this.setState({ section: "start" });
 	}
 
-
-	changePage = (currentPage) => {
-		this.setState({ currentPage: currentPage })
+	handleClickBeninja = () => {
+		this.setState({ section: "beNinja" });
 	}
+
+	handleClickHireNinja = () => {
+		this.setState({ section: "hireNinja" });
+	};
+
+	handleClicCart = () => {
+		this.setState({ section: "cart" });
+	};
+
+	renderSection = () => {
+		switch (this.state.section) {
+			case "start":
+				return (
+					<>
+						<Title />
+						<ContainerHome>
+							<AnimatedContainer>
+								<button onClick={this.handleClickBeninja}>
+									<Snip1104Blue>
+										<img src={hairBlueBg} alt="ninja face" />
+										<figcaption>
+											<h2>Seja um<span> Ninja</span></h2>
+										</figcaption>										
+									</Snip1104Blue>
+								</button>
+
+								<button onClick={this.handleClickHireNinja}>
+									<Snip1104Yelow>
+										<img src={hairYelowBg} alt="ninja face" />
+										<figcaption>
+											<h2>Contrate um<span> Ninja</span></h2>
+										</figcaption>										
+									</Snip1104Yelow>
+								</button>
+							</AnimatedContainer>
+						</ContainerHome>
+						<Testimonial />
+						<Media />
+						<Carousel />
+						
+						
+					</>
+				);
+			case "beNinja":
+				return <Cart />;
+			case "hireNinja":
+				return <ServicosLoja />;
+			case "cart":
+				return <Cart />;
+			default:
+				return <h2>Error!</h2>;
+		}
+	};
 
 	render() {
-		const renderCurrentPage = () => {
-			if (this.state.currentPage === "home") {
-				return <Home />
-			} else if (this.state.currentPage === "cart") {
-				return <Cart />
-			}
-		}
-
-		return (<>
-			<GlobalStyle />
-			
-			<Header
-				changePage={this.changePage} />
-			{renderCurrentPage()}
-			
-			<ServicosLoja />
-
-			<Footer />
-
-		</>
-		)
+		return (
+			<AppContainer>
+				<GlobalStyle />
+				<HeaderContainer>
+					<HeaderLogo>
+						<button onClick={this.handleClickStart}>
+							<img src={logo} alt="logo" />
+						</button>
+						<h2> LabNinja </h2>
+					</HeaderLogo>
+					<HeaderNav>
+						<button onClick={this.handleClickStart}> < FaHome /> Home </button>
+						<button onClick={this.handleClicCart}> < FaShoppingCart /> Carrinho </button>
+						<button><a href="#atendimento-ancora"> < FaPhoneAlt /> Atendimento </a></button>
+						<button><a href="#atendimento-ancora"> < FaLaptopCode /> Redes Sociais</a></button>
+					</HeaderNav>
+				</HeaderContainer>
+				{this.renderSection()}
+				<Footer />
+			</AppContainer>
+		);
 	}
 }
 

@@ -9,7 +9,7 @@ export const FooterContainer = styled.div`
     align-items: center;        
     color: #f3cb11;   
     background-image: url(${require(`../../images/foooterNinjaBackground.gif`)});
-    height:60vh;    
+    height:30vh;    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;    

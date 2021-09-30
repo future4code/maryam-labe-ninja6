@@ -1,15 +1,14 @@
 import styled from "styled-components"
 import bgHome from "../../images/kunaiBackground.jpg"
 
-
 export const ContainerHome = styled.div` 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;     
-    height: 55vh;  
+    height: 46vh;  
     background-color: #111835;  
-    background-image: url(${bgHome});     
+    /* background-image: url(${bgHome});      */
     background-position: center;   
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +18,7 @@ export const AnimatedContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  /* height: 40vh; */
 
   button{
     margin: 16px;
@@ -30,9 +29,9 @@ export const Snip1104Blue = styled.figure`
     position: relative;
     overflow: hidden;
     margin: 10px;
-    min-width: 320px;
-    max-width: 410px;
-    max-height: 420px;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 320px;
     width: 100%;    
     background: #0145b4; //* muda o fundo no lado esquerdo na imagem
     color: #ffffff;
