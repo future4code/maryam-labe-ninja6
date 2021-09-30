@@ -18,6 +18,12 @@ export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #303030;
         --branco: #FFFFFF;
+        --bgYelow: #f8d613;
+        --letterYelow: #f3cb11;
+        --bgBlue: #0145b4;
+        --letterBlue: #0448b7;
+        --bgDarkBlue:#111835;
+        --letterDarkBlue: #151b33;
     }
       
    body{

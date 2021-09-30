@@ -2,34 +2,30 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.div` 
     font-size: 1rem;
-    background-color: #212a2f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
-    color: #b3babb;
-    /* background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/732ea571558965.5bc9241b53aae.gif"); */
-    /* background-image: url("../../images/foooterNinjaBackground.gif"); */
-    
+    background-color: #111835;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    align-items: center;        
+    color: #f3cb11;   
     background-image: url(${require(`../../images/foooterNinjaBackground.gif`)});
-    height:70vh;    
+    height:60vh;    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background-size: cover;    
 `
 
 export const FooterSocialNetworks = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
-    `
+    align-content: center;    
+`
 
 export const SocialNetworksContainer = styled.div`
     align-items: center;
     display: flex;
-
+    padding: 16px;
 `
     
 export const Facebook = styled.a`    
@@ -100,8 +96,32 @@ export const FooterCustomerServices = styled.div`
     flex-direction: column;
     align-items: center;
     align-content: center;  
+    
+    h1 {
+        padding: 16px;
+    }
+
+    h2 {
+        color: #dae5e8;
+    }
 `
 export const Atendimento = styled.div`
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: center;  
+    padding: 16px;  
 `
+export const Phone = styled.a`     
+    color: #dae5e8;
+    padding: 8px;
+    font-size: 2rem;    
+`   
+
+export const Envelope = styled.a`    
+    padding: 10px;
+    color: #dae5e8;
+    padding: 10px;
+    font-size: 2rem;
+`
+   
+ 

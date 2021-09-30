@@ -1,37 +1,52 @@
 import React from "react"
-import { TitleContainer } from "./HomeStyle"
 import { ContainerHome } from "./HomeStyle"
-// AnimatedContainer
+import { Carousel } from "../Carousel/Carousel"
+import { Testimonial } from "../Testimonial/Testimonial"
+import { Media } from "../Media/Media"
+import { Title } from "../Title/Title"
+import { ChooseNinja } from "../ChooseNinja/ChooseNinja"
+import Cart from "../Cart/Cart"
 
 
-export const Home = () => {
+export default class Home extends React.Component {
+    state = {
+        currentPage: ''
+    }
 
-    return (
-        <ContainerHome>
+    changePage = (currentPage) => {
+        this.setState({ currentPage: currentPage })
+    }
 
-            <TitleContainer>
-                <h2> Labeninjas </h2>
-                <p> O talento certo no momento certo! </p>
-            </TitleContainer>
+    render() {
+        const renderCurrentPage = () => {
+            switch (this.state.currentPage) {
+                case 'home':
+                    return ""
+                case 'cart':
+                    return <Cart />
+                default:
+                    return ""
+            }
+        }
 
-            {/* <AnimatedContainer> */}
-                {/* <figure className="snip1104 red"> */}
-                    {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample33.jpg" alt="sample33" /> */}
-                    {/* <figcaption> */}
-                        {/* <h2>Seja um<span> Ninja</span></h2> */}
-                    {/* </figcaption> */}
-                    {/* <a href="index.html"></a> */}
-                {/* </figure> */}
+        return (
+            <ContainerHome>
 
-                {/* <figure className="snip1104"> */}
-                    {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample35.jpg" alt="sample35" /> */}
-                    {/* <figcaption> */}
-                        {/* <h2>Contrate um<span> Ninja</span></h2> */}
-                    {/* </figcaption> */}
-                    {/* <a href="index.html"></a> */}
-                {/* </figure> */}
-            {/* </AnimatedContainer> */}
+                <Title />
 
-        </ContainerHome>
-    )
+                <ChooseNinja
+                    changePage={this.changePage} />
+                {renderCurrentPage()}
+
+                <Carousel />
+
+                <Testimonial />
+
+                <Media />
+
+            </ContainerHome>
+        )
+    }
 }
+
+
