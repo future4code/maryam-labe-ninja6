@@ -51,7 +51,7 @@ export class ServicosLoja extends React.Component {
                 <StyleComplet>
                     <StyloTeste >
                     <h2>{jobs.title}</h2>
-                    <p> Valor {jobs.dueDate} por {jobs.price}</p>
+                    <p> Válido por {jobs.dueDate} por R${jobs.price}</p>
 
                     <Button>Adicionar ao carrinho</Button>
 

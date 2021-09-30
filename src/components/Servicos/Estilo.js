@@ -20,9 +20,6 @@ export const ListStyle = styled.div`
     grid-template-columns: 1fr;
   }
 
-  
- 
-
     h2,
   p {
     font-size: 14px;
@@ -77,4 +74,7 @@ export const StyloTeste = styled.div`
     margin-bottom: 20px;
   }
 
+`;
+export const Preco = styled.p`
+  
 `;
