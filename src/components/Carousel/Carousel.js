@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import { AppImage } from "../AppIMage/AppImage";
 import {
-    CarouselContainer,    
+    CarouselContainer,
     CarouselStyledContainer,
     StyledArrowContainer,
     StyledIndicator,
