@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-// import TodosDetalhes from "./Detalhe";
-// import ServicosLoja from "./Lista";
 import axios from "axios"
 
 const url = `https://labeninjas.herokuapp.com/jobs/${id}`;
@@ -42,7 +40,6 @@ export default class TelaServico extends Component {
     // <p>prazo{this.state.listas.dueData}</p>
     // </div>
     
-
     return (
       <div>
         {listaDetalhes}
