@@ -33,6 +33,10 @@ export const CarouselContainer = styled.div`
     justify-content: center;
     align-items: center;   
     position: relative; 
+
+    @media(max-width:768px){
+        height: 30vh; 
+    }
 `
 
 export const StyledArrowContainer = styled.div`
@@ -44,7 +48,14 @@ export const StyledArrowContainer = styled.div`
     align-items: center;
     border-radius: 50%;    
     left: ${props => props.leftPosition};
-    position: absolute;       
+    position: absolute;   
+    
+    @media(max-width:768px){
+        font-size: 25px;
+        width: 30px;
+        height: 30px;        
+    }
+    
     ${props => props.arrowDir === "forward" ?
         css`
         animation: ${forwardArrowAnimation} 1s ease;        

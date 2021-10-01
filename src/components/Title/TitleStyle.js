@@ -17,9 +17,20 @@ export const TitleStyle = styled.div`
      h2 {
         font-size: 3rem;
         font-weight: 600;
+        
+        @media(max-width:768px){
+            font-size: 2rem;
+        }
     }
 
     p {
         font-size: 2rem;
+        @media(max-width:768px){
+            font-size: 1rem;
+        }
+    }
+
+    @media(max-width:768px){
+        height:8vh;
     }
 `

@@ -12,22 +12,43 @@ export const FooterContainer = styled.div`
     height:30vh;    
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;  
+    
+    @media(max-width:768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height:30vh;        
+    }  
+
 `
 
 export const FooterSocialNetworks = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;    
+    align-content: center; 
+
+    @media(max-width:768px){
+        padding: 1px;  
+        h1 {
+            padding: 1px;
+            font-weight: 600;
+        }     
+    }   
+    
 `
 
 export const SocialNetworksContainer = styled.div`
     align-items: center;
     display: flex;
     padding: 16px;
+
+    @media(max-width:768px){
+        padding: 1px;      
+    } 
 `
-    
+
 export const Facebook = styled.a`    
     padding: 10px;
     color: #dae5e8;
@@ -53,7 +74,7 @@ export const Twitter = styled.a`
             text-decoration: none;
     }
 `
-    
+
 export const Linkedin = styled.a`    
     padding: 10px;
     color: #dae5e8;
@@ -89,7 +110,7 @@ export const Youtube = styled.a`
         color:  #c4302b;
         text-decoration: none;
     }
-`    
+`
 
 export const FooterCustomerServices = styled.div`
     display: flex;
@@ -104,24 +125,50 @@ export const FooterCustomerServices = styled.div`
     h2 {
         color: #dae5e8;
     }
+
+    @media(max-width:768px){
+        padding: 1px; 
+        h1 {
+            padding: 1px;
+            font-weight: 600;
+        }  
+        h2 {
+            padding: 1px;
+            font-weight: 600;
+        }    
+    } 
 `
 export const Atendimento = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;  
     padding: 16px;  
+
+    @media(max-width:768px){
+        padding: 6px;
+              
+    } 
 `
 export const Phone = styled.a`     
     color: #dae5e8;
     padding: 8px;
-    font-size: 2rem;    
-`   
+    font-size: 2rem;  
+    
+    @media(max-width:768px){
+        padding: 1px;
+        font-size: 1rem;       
+    } 
+`
 
 export const Envelope = styled.a`    
     padding: 10px;
     color: #dae5e8;
     padding: 10px;
     font-size: 2rem;
+
+    @media(max-width:768px){
+        padding: 1px;  
+        font-size: 1rem;    
+    } 
 `
-   
- 
+
