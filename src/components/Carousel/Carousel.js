@@ -41,6 +41,7 @@ export const Carousel = () => {
                     <StyledArrowContainer
                         onClick={prevImage}
                         leftPosition="7%"
+                        // leftPosition="1%" //* muda a posição da arrow do lado esquerdo, pra mobile teria que ser 1%. Como fazer?
                         arrowDir="backward"
                     >
                         <MdKeyboardArrowLeft />
