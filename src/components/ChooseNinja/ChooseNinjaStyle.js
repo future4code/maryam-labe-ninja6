@@ -12,23 +12,32 @@ export const ContainerHome = styled.div`
     background-position: center;   
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media(max-width:768px){
+      height: 20vh;       
+    }
 `
 
 export const AnimatedContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 40vh; */
 
   button{
     margin: 16px;
+  }
+
+  @media(max-width:768px){
+    button{
+      margin: 6px;
+    }       
   }
 `
 
 export const Snip1104Blue = styled.figure`
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 1px;
     min-width: 220px;
     max-width: 310px;
     max-height: 320px;
@@ -37,6 +46,13 @@ export const Snip1104Blue = styled.figure`
     color: #ffffff;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+    @media(max-width:768px){
+      margin: 0px;
+      min-width: 120px;
+      max-width: 110px;
+      max-height: 120px;        
+    }  
 
     * {
     -webkit-box-sizing: border-box;
@@ -71,11 +87,23 @@ export const Snip1104Blue = styled.figure`
     margin: 0;
     top: 50%;
     text-transform: uppercase;
-    font-weight: 400;    
+    font-weight: 400;   
+    
+    @media(max-width:768px){    
+      left: 10px;
+      right: 10px;
+      font-weight:200;
+    }       
+    
   }
   
   h2 span {
     font-weight: 800;
+
+    @media(max-width:768px){
+      font-weight: 700;
+    }
+
   }
   
   :before {

@@ -7,6 +7,10 @@ export const MediaContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media(max-width:768px){
+        height:12vh;
+    }
 `
 
 export const TituloMedia = styled.div`

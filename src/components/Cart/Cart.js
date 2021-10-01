@@ -48,9 +48,11 @@ export default class Cart extends React.Component {
 		} */
 
 	removeItenFromCart = (itenToRemove) => {
-		const newCart = this.state.cart.filter(iten => {
+		const newCart = this.state.cart.filter((iten) => {
 			if (iten.id !== itenToRemove.id) {
 				return iten
+			} else {
+				return false
 			}
 		})
 		this.setState({
