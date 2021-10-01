@@ -27,6 +27,9 @@ import { Testimonial } from './components/Testimonial/Testimonial';
 import { Media } from './components/Media/Media';
 import { AppContainer } from './AppContainer';
 import { Title } from './components/Title/Title';
+import SignUp from './components/Signup/SignUp';
+
+
 
 
 export default class App extends React.Component {
@@ -83,7 +86,7 @@ export default class App extends React.Component {
 					</>
 				);
 			case "beNinja":
-				return <Cart />;
+				return <SignUp />;
 			case "hireNinja":
 				return <ServicosLoja />;
 			case "cart":
