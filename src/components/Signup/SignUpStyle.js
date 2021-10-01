@@ -1,13 +1,20 @@
 import styled from "styled-components"
+import bgHome from "../../images/kunaiBackground.jpg"
+
 
 export const SignUpContainer = styled.form` 
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid yellow;
     margin: 20px;
     height: 70vh;
-    padding: 30px
+    padding: 30px;
+    background-image: url(${bgHome});      
+    background-position: center;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     
 `
 
