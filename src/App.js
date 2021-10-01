@@ -28,7 +28,7 @@ import { Media } from './components/Media/Media';
 import { AppContainer } from './AppContainer';
 import { Title } from './components/Title/Title';
 import SignUp from './components/Signup/SignUp';
-
+import TelaServico from './components/Servicos/Listas';
 
 
 
@@ -58,7 +58,8 @@ export default class App extends React.Component {
 			case "start":
 				return (
 					<>
-						<Title />
+					<TelaServico />	
+						<Title />						
 						<ContainerHome>
 							<AnimatedContainer>
 								<button onClick={this.handleClickBeninja}>
@@ -82,7 +83,7 @@ export default class App extends React.Component {
 						</ContainerHome>
 						<Testimonial />
 						<Media />
-						<Carousel />	
+						<Carousel />						
 					</>
 				);
 			case "beNinja":
