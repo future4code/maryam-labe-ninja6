@@ -3,6 +3,10 @@ import { GlobalStyle } from './globalStyles';
 import { Footer } from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
 import { ServicosLoja } from './components/Servicos/Servicos';
+<<<<<<< HEAD
+import SignUp from './components/Signup/SignUp';
+
+=======
 import {
 	FaHome,
 	FaShoppingCart,
@@ -27,6 +31,9 @@ import { Testimonial } from './components/Testimonial/Testimonial';
 import { Media } from './components/Media/Media';
 import { AppContainer } from './AppContainer';
 import { Title } from './components/Title/Title';
+>>>>>>> master
+
+
 
 
 export default class App extends React.Component {
