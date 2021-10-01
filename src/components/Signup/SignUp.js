@@ -1,10 +1,9 @@
 import React from "react";
-import { SignUpContainer, DivLine, Button, Input, Label} from "./SignUpStyle";
-import styled from "styled-components"
+import { SignUpContainer, Button, Input, Label} from "./SignUpStyle";
 import axios from 'axios'
 
 const url = "https://labeninjas.herokuapp.com"
-const key = "maryam-labe-ninjas6"
+// const key = "maryam-labe-ninjas6"
 const headers = { 'Authorization' : "e2190c39-7930-4db4-870b-bed0e5e4b88e" }
 
 export default class SignUp extends React.Component {
@@ -50,7 +49,7 @@ export default class SignUp extends React.Component {
 			this.setState({dataDisponivel: event.target.value})
 			console.log(this.state.dataDisponivel)
 			
-			console.log("estou aqui na data")
+			
 		}
 
 		cadastrarComApi = async(event)=> {
