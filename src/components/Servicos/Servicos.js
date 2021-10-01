@@ -97,7 +97,8 @@ export class ServicosLoja extends React.Component {
 
                                 <Button>Adicionar ao carrinho</Button>
 
-                                <Button>Detalhes</Button>
+                                <Button>Detalhes</Button> 
+                                {/* chamar o listas => <TelaServico />  */}
                             </StyloTeste>
 
                         </StyleComplet>
