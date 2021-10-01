@@ -5,6 +5,8 @@ import { Header } from './components/Header/Header';
 import Home from './components/Home/Home';
 import Cart from './components/Cart/Cart';
 import { ServicosLoja } from './components/Servicos/Servicos';
+import SignUp from './components/Signup/SignUp';
+
 
 
 

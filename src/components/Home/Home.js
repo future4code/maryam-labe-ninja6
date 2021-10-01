@@ -6,6 +6,7 @@ import { Media } from "../Media/Media"
 import { Title } from "../Title/Title"
 import { ChooseNinja } from "../ChooseNinja/ChooseNinja"
 import Cart from "../Cart/Cart"
+import SignUp from "../Signup/SignUp"
 
 
 export default class Home extends React.Component {
@@ -24,6 +25,8 @@ export default class Home extends React.Component {
                     return ""
                 case 'cart':
                     return <Cart />
+                case 'signup':
+                    return <SignUp />
                 default:
                     return ""
             }

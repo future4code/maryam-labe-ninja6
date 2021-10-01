@@ -12,7 +12,8 @@ export const ChooseNinja = (props) => {
     return (
         <ContainerHome>
             <AnimatedContainer>
-                <button onClick={() => props.changePage("")}>
+                <button onClick={() => props.changePage("signup")}>
+                   
                     <Snip1104Blue>
                         <img src={hairBlueBg} alt="ninja face" />
                         <figcaption>
