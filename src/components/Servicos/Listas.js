@@ -32,6 +32,7 @@ export default class TelaServico extends Component {
       return <div onClick = { ( )=> this.listDetails(idJobs.id) }></div>
     })
 
+    
     // const listaDetalhes = <div>{this.state.listas.id}
     // <h2>{this.state.listas.title}</h2>
     // <p>{this.state.litas.description}</p>
